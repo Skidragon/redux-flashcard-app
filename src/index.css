@@ -30,11 +30,13 @@ footer, header, hgroup, menu, nav, section {
 }
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 body {
   line-height: 1;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-family: Roboto, sans-serif, Arial;
+  letter-spacing: .3rem;
 }
 ol, ul {
 	list-style: none;
