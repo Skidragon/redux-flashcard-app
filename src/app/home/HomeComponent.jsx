@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "bulma/css/custom-bulma.css";
 import "../styles/custom-props.css";
@@ -43,6 +44,8 @@ const SubTitle = styled.div.attrs({
 })`
   font-size: 1.5rem;
   text-align: center;
+  letter-spacing: 0.2rem;
+
   color: var(--main-font-color);
   ${device.mobileL`
   text-align: left;
@@ -76,7 +79,10 @@ const HomeComponent = props => {
             The only flashcard program that you will ever need.
           </SubTitle>
           <CtaContainer>
-            <CtaButton>Start Your Journey</CtaButton>
+            <Link to="/flashcards-page">
+              <CtaButton>Start Your Journey</CtaButton>
+            </Link>
+
             <CtaText>
               Still not convinced... Try it out, no registration is required.
             </CtaText>
